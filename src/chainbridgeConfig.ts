@@ -87,7 +87,7 @@ export const chainbridgeConfig: ChainbridgeConfig = {
       nativeTokenSymbol: "SDN",
       tokens: [
         {
-          address: "0x8347B8A88c0cc6Aad466d93b6533927cE8100857",
+          address: "0x722377A047e89CA735f09Eb7CccAb780943c4CB4",
           name: "Standard",
           symbol: "STND",
           imageUri: "WETHIcon",
