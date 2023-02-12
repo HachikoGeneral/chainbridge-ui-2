@@ -45,64 +45,48 @@ export type ChainbridgeConfig = {
 };
 
 export const chainbridgeConfig: ChainbridgeConfig = {
-  chains: [
+ chains: [
     {
-      chainId: 1,
-      networkId: 1,
-      name: "Ethereum Mainnet",
-      decimals: 18,
-      bridgeAddress: "0x312C034304f0fCFc2e7D125baaf121DcF24F125D",
-      erc20HandlerAddress: "0x67b4B460dDC18Ea8febce84F8B377824A5CC6d29",
-      rpcUrl: "https://mainnet.infura.io/v3/957f4313f1374fcc8fdf0d7037555cd9",
+      chainId: 0,
+      networkId: 42,
+      name: "chikochain",
+      bridgeAddress: "0x4b552F62A4Db1f31C59c93E8Cb5A112a410598Ef",
+      erc20HandlerAddress: "0x3C4BcD08649897975123Cd8E47b2B34fB6e06D57",
+      rpcUrl: "http://70.34.216.42:9933",
       type: "Ethereum",
-      nativeTokenSymbol: "ETH",
+      blockExplorer: "http://95.179.194.226:3000/?rpc=ws%3A%2F%2F70.34.216.42%3A9944#/explorer",
+      nativeTokenSymbol: "CHK",
       tokens: [
         {
-          address: "0x9040e237c3bf18347bb00957dc22167d0f2b999d",
-          name: "Standard",
-          symbol: "STND",
-          imageUri: "WETHIcon",
+          address: "0x2e5E530dC2C6b2A8f214ee929dC4a302575881A9",
+          name: "WrappedChikoToken",
+          symbol: "WCHK",
+          imageUri: ETHIcon,
           resourceId:
-            "0xc04648c7ac0a6ec16720544cb9a4b3e685e51016009bf048a1100c01027a84d7",
-        },
-        {
-          address: "0x8347b8a88c0cc6aad466d93b6533927ce8100857",
-          name: "Chainbridge Shiden",
-          symbol: "cbrSDN",
-          imageUri: "WETHIcon",
-          resourceId:
-            "0x754af6dbae57fc76c03086507f7ff6d3584d021d81e8eed7395402233673fe11",
+            "0x000000000000000000000000000000c76ebe4a02bbc34786d860b355f5a5ce00",
         },
       ],
     },
     {
-      chainId: 100,
-      networkId: 336,
-      name: "Shiden",
-      decimals: 18,
-      bridgeAddress: "0x036A851D3Ca034a6b9075266f538d2De29426571",
-      erc20HandlerAddress: "0x924E82c5e4cDA29AA8241116f6dDdeC021301D6c",
-      rpcUrl: "https://rpc.shiden.astar.network:8545",
+      chainId: 1,
+      networkId: 137,
+      name: "polygon",
+      bridgeAddress: "0x006f485B4216759cfb8979DE2E4974f74c95585D",
+      erc20HandlerAddress: "0xaFfCFf9AA352E8f3960e2B9538164053F8C9E264",
+      rpcUrl: "https://polygon-mainnet.g.alchemy.com/v2/Sziok2o64OsCpH9HP339wQdHe-akTGFi",
       type: "Ethereum",
-      nativeTokenSymbol: "SDN",
+      blockExplorer: "https://polygonscan.com/",
+      nativeTokenSymbol: "MATIC",
       tokens: [
         {
-          address: "0x722377A047e89CA735f09Eb7CccAb780943c4CB4",
-          name: "Standard",
-          symbol: "STND",
-          imageUri: "WETHIcon",
+          address: "0x9e1a245707799e747B4482E965B18BDd7cB4df57",
+          name: "WrappedChikoToken",
+          symbol: "WCHK",
+          imageUri: ETHIcon,
           resourceId:
-            "0xc04648c7ac0a6ec16720544cb9a4b3e685e51016009bf048a1100c01027a84d7",
-        },
-        {
-          address: "0x0f933Dc137D21cA519ae4C7E93f87a4C8EF365Ef",
-          name: "Wrapped Shiden",
-          symbol: "WSDN",
-          imageUri: "WETHIcon",
-          resourceId:
-            "0x754af6dbae57fc76c03086507f7ff6d3584d021d81e8eed7395402233673fe11",
+            "0x000000000000000000000000000000c76ebe4a02bbc34786d860b355f5a5ce00",
         },
       ],
     },
   ],
-};
+
