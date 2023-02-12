@@ -85,7 +85,7 @@ const AppHeader: React.FC<IAppHeader> = () => {
         <div className={classes.logo}>
           <img src="./shiden.png" alt="Shiden" />
         </div>
-        <Typography variant="h4">ShidenBridge Token Swap</Typography>
+        <Typography variant="h4">ChikochainBridge Token Swap</Typography>
       </div>
       <section className={classes.state}>
         {!isReady ? (
