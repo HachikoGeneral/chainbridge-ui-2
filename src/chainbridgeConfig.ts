@@ -1,3 +1,5 @@
+import ETHIcon from "./media/tokens/eth.svg";
+
 export type TokenConfig = {
   address: string;
   name?: string;
