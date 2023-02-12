@@ -50,6 +50,7 @@ export const chainbridgeConfig: ChainbridgeConfig = {
       chainId: 0,
       networkId: 42,
       name: "chikochain",
+      decimals: 18,
       bridgeAddress: "0x4b552F62A4Db1f31C59c93E8Cb5A112a410598Ef",
       erc20HandlerAddress: "0x3C4BcD08649897975123Cd8E47b2B34fB6e06D57",
       rpcUrl: "http://70.34.216.42:9933",
@@ -71,6 +72,7 @@ export const chainbridgeConfig: ChainbridgeConfig = {
       chainId: 1,
       networkId: 137,
       name: "polygon",
+      decimals: 18,
       bridgeAddress: "0x006f485B4216759cfb8979DE2E4974f74c95585D",
       erc20HandlerAddress: "0xaFfCFf9AA352E8f3960e2B9538164053F8C9E264",
       rpcUrl: "https://polygon-mainnet.g.alchemy.com/v2/Sziok2o64OsCpH9HP339wQdHe-akTGFi",
@@ -89,4 +91,5 @@ export const chainbridgeConfig: ChainbridgeConfig = {
       ],
     },
   ],
+};
 
