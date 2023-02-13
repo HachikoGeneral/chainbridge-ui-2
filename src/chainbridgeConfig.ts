@@ -20,6 +20,7 @@ export type BridgeConfig = {
   tokens: TokenConfig[];
   nativeTokenSymbol: string;
   decimals: number;
+  blockConfirmations: number;
 };
 
 export type EvmBridgeConfig = BridgeConfig & {
@@ -59,6 +60,7 @@ export const chainbridgeConfig: ChainbridgeConfig = {
       type: "Ethereum",
       blockExplorer: "http://95.179.194.226:3000/?rpc=ws%3A%2F%2F70.34.216.42%3A9944#/explorer",
       nativeTokenSymbol: "CHK",
+      blockConfirmations: 1,
       tokens: [
         {
           address: "0x2e5E530dC2C6b2A8f214ee929dC4a302575881A9",
@@ -81,6 +83,7 @@ export const chainbridgeConfig: ChainbridgeConfig = {
       type: "Ethereum",
       blockExplorer: "https://polygonscan.com/",
       nativeTokenSymbol: "MATIC",
+      blockConfirmations: 1,
       tokens: [
         {
           address: "0x9e1a245707799e747B4482E965B18BDd7cB4df57",
